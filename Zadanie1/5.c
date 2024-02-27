@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 int suma_wielokrotnosci(int n) {
-    // Jeśli liczba jest ujemna, zwracamy 0
     if (n < 0)
         return 0;
 
     int suma = 0;
     for (int i = 1; i < n; i++) {
-        // Sprawdzamy czy liczba jest wielokrotnością 3 lub 5
         if (i % 3 == 0 || i % 5 == 0) {
             suma += i;
         }
