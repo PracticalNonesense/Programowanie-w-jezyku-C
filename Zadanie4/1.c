@@ -8,11 +8,9 @@ int factorial(int x)
     }
     else if (x > 1)
     {
-        /* Recursive step */
         return x* factorial(x-1) ;
     }
 
-    /* Catch scenario when x is zero */
     return 0;
 }
 
