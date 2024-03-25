@@ -4,19 +4,15 @@ int binarySearch(int arr[], int left, int right, int target) {
     if (right >= left) {
         int mid = left + (right - left) / 2;
         
-        // Jeśli element znajduje się w środku
         if (arr[mid] == target)
             return mid;
         
-        // Jeśli element jest mniejszy od środkowego, to szukaj w lewej połowie
         if (arr[mid] > target)
             return binarySearch(arr, left, mid - 1, target);
         
-        // W przeciwnym razie szukaj w prawej połowie
         return binarySearch(arr, mid + 1, right, target);
     }
     
-    // Jeśli element nie jest obecny w tablicy
     return -1;
 }
 
