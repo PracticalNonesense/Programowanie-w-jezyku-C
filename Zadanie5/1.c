@@ -15,6 +15,7 @@ void addFirst(struct Node **head, int value) {
     newNode->data = value;
     newNode->next = *head;
     *head = newNode;
+}
 
 void displayList(struct Node *head) {
     struct Node *temp = head;
