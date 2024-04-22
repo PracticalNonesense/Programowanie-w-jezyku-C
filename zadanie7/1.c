@@ -15,7 +15,7 @@ int calculateEnergy(char *line) {
 
 int main() {
     // Otwarcie pliku
-    FILE *file = fopen("notatnik.txt", "r");
+    FILE *file = fopen("inout.txt", "r");
     if (file == NULL) {
         perror("Nie udało się otworzyć pliku");
         return 1;
